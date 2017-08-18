@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="1a39a076-a40f-41b5-a1de-ac29f6f86140" activeEnvironment="Default environment" name="REST Google" resourceRoot="" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="0547a381-8b6a-4308-a783-18505b66e95d" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://maps.googleapis.com</con:endpoint></con:endpoints><con:resource name="Json" path="/maps/api/directions/json" id="b1192f4d-057a-432e-a233-c2091eb156c1"><con:settings/><con:parameters/><con:method name="Json" id="b82657d9-06fd-478c-afaa-6ce7cd9e2a17" method="GET"><con:settings/><con:parameters><con:parameter><con:name>origin</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>destination</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>waypoints</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:json="https://maps.googleapis.com/maps/api/directions/json">json:Response</con:element></con:representation><con:request name="Request 1" id="49c6af1f-734d-4389-8cd8-d04cd48b7751" mediaType="application/json"><con:settings/><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters>
+  <con:entry key="origin" value="Chicago,IL"/>
+  <con:entry key="destination" value="Los Angeles,CA"/>
+  <con:entry key="waypoints" value="Joplin,MO|Oklahoma City,OK"/>
+</con:parameters><con:parameterOrder><con:entry>origin</con:entry><con:entry>destination</con:entry><con:entry>waypoints</con:entry></con:parameterOrder></con:request><con:request name="Request 2" id="7d9bc226-0dd5-415b-91de-3cffec6c38a5" mediaType="application/json"><con:settings/><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters>
+  <con:entry key="origin" value="Varna,Bulgaria"/>
+  <con:entry key="destination" value="Sofia,Bulgaria"/>
+  <con:entry key="waypoints" value="Plovdiv,Bulgaria"/>
+</con:parameters></con:request><con:request name="Request 3" id="03a32b95-af13-42c5-803a-f5a2560be239" mediaType="application/json"><con:settings/><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters>
+  <con:entry key="origin" value="Sofia,Bulgaria"/>
+  <con:entry key="destination" value="Kyustendil,Bulgaria"/>
+  <con:entry key="waypoints" value="Radomir,Bulgaria"/>
+</con:parameters></con:request><con:request name="Request 4" id="d70ab0c3-974f-483b-b772-dadf49201d38" mediaType="application/json"><con:settings/><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters>
+  <con:entry key="origin" value="sydney,au"/>
+  <con:entry key="destination" value="perth,au"/>
+  <con:entry key="waypoints" value="via:-37.81223,144.96254|via:-34.92788,138.60008"/>
+</con:parameters></con:request><con:request name="Request 5" id="d5ad0d67-a3cd-4a3b-9927-2356b77f45f6" mediaType="application/json"><con:settings/><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters>
+  <con:entry key="origin" value="75 9th Ave New York, NY"/>
+  <con:entry key="destination" value="MetLife Stadium 1 MetLife Stadium Dr East Rutherford, NJ 07073"/>
+</con:parameters></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ad4feeab-459c-4171-9eb1-4c97dd0287ad" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/maps/api/geocode/json" path="/maps/api/geocode/json" id="b91f40a4-5951-4869-ac2d-75debcc95288"><con:settings/><con:parameters><con:parameter><con:name>address</con:name><con:value>1600 Amphitheatre Parkway, Mountain View, CA</con:value><con:style>QUERY</con:style><con:default>1600 Amphitheatre Parkway, Mountain View, CA</con:default></con:parameter></con:parameters><con:method name="GET" id="b3f1ac66-c649-41c4-bbb0-0f73e7d1dbfa" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:json="https://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="GET Request" id="a789e1c8-1af4-444a-86eb-204e464f3518" mediaType="application/json"><con:settings/><con:endpoint>https://maps.googleapis.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="6be27bf0-2313-4fb0-b4ac-8bf19bd5660b" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/maps/api/geocode/json" path="/maps/api/geocode/json" id="6326375e-7849-4c46-a4c5-0f7169ee7e47"><con:settings/><con:parameters><con:parameter><con:name>latlng</con:name><con:value>40.714224,-73.961452</con:value><con:style>QUERY</con:style><con:default>40.714224,-73.961452</con:default></con:parameter></con:parameters><con:method name="GET" id="b951e62c-6dd8-4d7c-aa24-30b0f2fa14c5" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:json="https://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:json="https://maps.googleapis.com/maps/api/geocode/json">json:Fault</con:element></con:representation><con:request name="GET Request" id="24eb1204-dae8-4f69-97d0-e1c3e6bbb508" mediaType="application/json"><con:settings/><con:endpoint>https://maps.googleapis.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="17df8db1-2cff-40ea-addf-62fabdda7555" name="Google Directions API"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="57be9cc3-8efe-4963-8a37-627c5602793f" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Json - Request 1" id="6ef41ed5-1c42-4cc1-addb-bb3d6a7a652c"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/directions/json" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Json - Request 1" id="49c6af1f-734d-4389-8cd8-d04cd48b7751" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:assertion type="JsonPath Match" id="8b94a4e2-1886-4bd8-ba87-83231b696893" name="Match content of [status]"><con:configuration><path>$['status']</path><content>OK</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="dacded1e-ae65-49af-bba6-24df9717aa7d" name="Response SLA"><con:configuration><SLA>500</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="origin" value="Chicago,IL"/>
+  <con:entry key="destination" value="Los Angeles,CA"/>
+  <con:entry key="waypoints" value="Joplin,MO|Oklahoma City,OK"/>
+</con:parameters><con:parameterOrder><con:entry>origin</con:entry><con:entry>destination</con:entry><con:entry>waypoints</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Json - Request 2" id="abc0a112-5328-48ac-b0e4-05a5aafb0188"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/directions/json" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Json - Request 2" id="7d9bc226-0dd5-415b-91de-3cffec6c38a5" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:assertion type="Response SLA Assertion" id="98713756-3dd4-41cd-8e27-344660fca1b1" name="Response SLA"><con:configuration><SLA>800</SLA></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="41a7a0e0-b621-4d22-bed7-2319a5b4962b" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://maps.googleapis.com/maps/api/directions/json';
+//ns1:Response[1]/ns1:routes[1]/ns1:e[1]/ns1:legs[1]/ns1:e[1]/ns1:start_address[1]</con:xpath><con:element>start_address</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>Varna, Bulgaria</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://maps.googleapis.com/maps/api/directions/json">
+   <geocoded_waypoints>
+      <e>
+         <geocoder_status>OK</geocoder_status>
+         <place_id>ChIJodfzqotTpEARfIulcRyUJ1c</place_id>
+         <types>
+            <e>locality</e>
+            <e>political</e>
+         </types>
+      </e>
+      <e>
+         <geocoder_status>OK</geocoder_status>
+         <place_id>ChIJPXZIogjRrBQRoDgTb_rRcGQ</place_id>
+         <types>
+            <e>locality</e>
+            <e>political</e>
+         </types>
+      </e>
+      <e>
+         <geocoder_status>OK</geocoder_status>
+         <place_id>ChIJ9Xsxy4KGqkARYF6_aRKgAAQ</place_id>
+         <types>
+            <e>locality</e>
+            <e>political</e>
+         </types>
+      </e>
+   </geocoded_waypoints>
+   <routes>
+      <e>
+         <bounds>
+            <northeast>
+               <lat>43.2140591</lat>
+               <lng>27.9147218</lng>
+            </northeast>
+            <southwest>
+               <lat>42.13580880000001</lat>
+               <lng>23.3218696</lng>
+            </southwest>
+         </bounds>
+         <copyrights>Map data ©2017 Google</copyrights>
+         <legs>
+            <e>
+               <distance>
+                  <text>364 km</text>
+                  <value>363924</value>
+               </distance>
+               <duration>
+                  <text>4 hours 14 mins</text>
+                  <value>15255</value>
+               </duration>
+               <end_address>Plovdiv, Bulgaria</end_address>
+               <end_location>
+                  <lat>42.1354397</lat>
+                  <lng>24.7452837</lng>
+               </end_location>
+               <start_address>Varna, Bulgaria</start_address>
+               <start_location>
+                  <lat>43.2140591</lat>
+                  <lng>27.9147218</lng>
+               </start_location>
+               <steps>
+                  <e>
+                     <distance>
+                        <text>0.4 km</text>
+                        <value>420</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>73</value>
+                     </duration>
+                     <end_location>
+                        <lat>43.2114232</lat>
+                        <lng>27.9110351</lng>
+                     </end_location>
+                     <html_instructions><![CDATA[Head <b>southwest</b> on <b>ул. „Пирин“</b> toward <b>бул. „Цар Освободител“</b>]]]]>><![CDATA[</html_instructions>
+                     <polyline>
+                        <points>{fwfG_bkiDFHRVxAzBfD`FxBrCnApBf@xA</points>
+                     </polyline>
+                     <start_location>
+                        <lat>43.2140591</lat>
+                        <lng>27.9147218</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.2 km</text>
+                        <value>193</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>43</value>
+                     </duration>
+                     <end_location>
+                        <lat>43.2100119</lat>
+                        <lng>27.9121416</lng>
+                     </end_location>
+                     <html_instructions>Turn &lt;b>left&lt;/b> onto &lt;b>бул. „Сливница“&lt;/b></html_instructions>
+                     <maneuver>turn-left</maneuver>
+                     <polyline>
+                        <points>kvvfG_kjiDDVPU\c@nAoAl@e@p@e@r@]</points>
+                     </polyline>
+                     <start_location>
+                        <lat>43.2114232</lat>
+                        <lng>27.9110351</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.3 km</text>
+                        <value>260</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>57</value>
+                     </duration>
+                     <end_location>
+                        <lat>43.2078706</lat>
+                        <lng>27.91341</lng>
+                     </end_location>
+                     <html_instructions>Continue onto &lt;b>ул. „Александър Рачински“&lt;/b></html_instructions>
+                     <polyline>
+                        <points>qmvfG{qjiDlB}@tCiAZKl@]f@a@TO^Y</points>
+                     </polyline>
+                     <start_location>
+                        <lat>43.2100119</lat>
+                        <lng>27.9121416</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.2 km</text>
+                        <value>194</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>48</value>
+                     </duration>
+                     <end_location>
+                        <lat>43.2063474</lat>
+                        <lng>27.9145886</lng>
+                     </end_location>
+                     <html_instructions>Continue onto &lt;b>ул. „Антим I-ви“&lt;/b></html_instructions>
+                     <polyline>
+                        <points>e`vfGyyjiDPOhDeCf@_@jAu@</points>
+                     </polyline>
+                     <start_location>
+                        <lat>43.2078706</lat>
+                        <lng>27.91341</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>41.6 km</text>
+                        <value>41553</value>
+                     </distance>
+                     <duration>
+                        <text>34 mins</text>
+                        <value>2069</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.9301276</lat>
+                        <lng>27.7856853</lng>
+                     </end_location>
+                     <html_instructions><![CDATA[Turn <b>right</b> onto <b>бул. „Княгиня Мария Луиза“</b>/<b>Route 9</b>/<b>E87</b><div style="font-size:0.9em">Continue to follow E87</div>]]]]>><![CDATA[</html_instructions>
+                     <maneuver>turn-right</maneuver>
+                     <polyline>
+                        <points>uvufGeakiDjBpGr@|Bl@pBNr@`A`ED\Ft@@ZXdEJbE?TBl@HdCD`ABZHbA|@fHRtABVBRBd@LrBJxATlH@dADbA@L^vCDVTnAZnA@Fb@zAt@~CZ`AVh@R`@LTV^VXVXVVb@ZXPb@T~@XVDd@JZ@H@d@?~@@nBUh@Ej@ErAA^@X@b@Bn@Hb@Hf@LJ@XJbA`@x@b@bAp@NL`Az@VZp@z@V^^n@\n@nC~FjDzHrBrEnD~HtEdKh@hAf@hArClGRb@BB?@JTJTfA~Bp@xAXl@@B@BDHLZvFxLVn@Xp@v@jBd@hAj@zAf@vATn@Pl@Tv@Tx@VdA^vA^jBn@hDh@nDRvAP`BBRH`AHhARvCLxCD`BBbA@d@@L@fBDvED~DJjJFbHBbCJhJJrILhNLnJJxCLdBJfAPfBHf@b@lCRz@b@hBt@`CN`@z@rBBFJTHTLTd@|@`@n@l@z@pAfBn@r@VVdBxA\T\VTLl@`@bAh@|@\vAf@XFh@Pz@N~@JlAHjADf@@nBAp@Ev@Gj@In@Kf@MxA]|@Y~@]~Am@bCeAvB}@jBe@f@GjAM~AIt@C~BDhCRzATrAZnBp@tAp@|A~@vAhA|AvAnAvAV\NPb@n@|@|A^t@Zl@P^d@lAb@hAn@vBHT`@xAd@dBl@dCb@hBV|@XbA`@bBhAbEx@tCj@nBx@jC^fAz@`Cb@`AN^`AtBd@|@b@z@R`@x@vAVd@HN@??BNRLPnAlB`C~ChBvBnAtA|B|BtAlAfBxARL~AfAjBfA|@h@pAv@jB~@xAn@lD`BZLhErBZPvAp@|At@jCpAhB|@lB~@~@b@~@`@p@\dAf@x@b@lB|@r@\|Av@dAh@tB`AjAl@~@b@p@XJD@@JFb@Nj@Vz@\bBn@~Aj@hA\VHjA\jBb@PDt@P`@JtBh@j@N\JhA`@RFPFP@b@R`@Nz@b@dB`AvEpCrDxBjBfA|UnNz@j@b@ZNHj@b@b@^r@f@?@ZTfBzATNHHLLTTRVTXPZNXTh@HTJ\J`@b@bBPv@Lj@Rp@Rn@P^HPLTTZTTNLPN\Tb@P^JJBN@ZDRAP?ZAPEb@IPE\O\UXUXY\e@j@s@dA{A~AyBjDuExAuBxBwCtAoBl@{@p@_A`@m@bAuAl@w@T[p@iAVg@Zw@Z{@l@iBX_A`AyChB{F|@oCt@{BbC}H`AqCL[JUP[^o@Tc@FGnAmB~AeCXa@JOb@o@RY~@uAjAmBp@iANUbAyAZ_@TSPQPMTMf@UxAg@RG~Bq@bDcAdA]XO^UVQTSp@k@hBaB`DqCpBgBjAeAx@q@^]JCBADEVQVSf@e@PSDELMb@i@X[V]l@{@b@o@Za@T_@LUZc@lFqH~@oAxAoB~AyBv@eAf@q@p@_AR[p@{@n@u@b@g@b@c@r@s@v@u@p@q@nCiCzAoAlAaApC_CvE{DfByAnAcAzk@ef@fB{A~AoAbDoCh@c@lDwCv@o@lAaATS\YZWFGf@_@TO^Qf@WVKXM`@MvAWrBc@~@Q`RoDzAYx@Ih@C`@ChAErAElAE`BEfAEfEKzCK`BEvAGfJYlBGh@At@CfBExEI\AjACrAEx@Gd@In@Mx@QfA[rAa@tBo@pCy@dA[~Bq@hA[xAe@ZKd@Q|Ak@rAg@nAe@jCaA`@Qx@Yj@Sh@S|Ak@zCiAJAlAe@x@YNEHCNCXG`@Ed@Cl@AZBV@XDTDPDl@J^J\HRDT@rA\pEdAz@Tp@Nl@Lf@HlC^`CTtANnAPl@L^Jf@PZLd@R`@Tr@d@n@d@h@f@b@h@b@f@d@v@b@r@PZTf@Vn@Rj@Rj@h@vB\nA\nAl@lBZx@Tf@Zn@`@v@^n@^l@NPNPh@n@d@d@d@b@VRXTt@d@f@Xr@\n@Vv@VhA^nK`DjCt@`@Nd@Rr@`@`@X\Vh@`@b@b@b@h@j@n@Zf@f@|@Tb@p@xAzAjDd@bAl@vA|ApD|@rBXl@Td@PXLRPXT\h@r@\^\\j@h@ZVTP`@Vh@ZdAf@PLLFNFf@PfAb@`A^ZL~@\TJJBLBfA`@jEdBp@VpEdBhBt@bBn@nBt@dAb@d@Pd@Pj@R|Ar@PHVNLJNLNNRRPRPXPZR^Tl@X|@Nz@F\B^Dv@Dx@@|@DhCHxGBdB@x@DlBBd@Dh@JbAH^PhARfARx@X|@Z`Ab@`AbBlDXp@fBtDl@vAn@rAj@lA`@z@fA|Bn@vAvEzJvCfGhFzKhA~BdBrDx@|Ah@x@z@nAd@l@z@bAz@z@hL~LpBzBbB`BdAdAbAfAzA~AnApA~BhC~]l_@\\rGbH|CbDnFxFpGhHfLxLt@t@d@\JJRNfAl@`C|@dAVVFpAPb@D~Eh@jAJXDh@DV@hBLjAFT@|AHb@@R?R@J@n@DRDbCn@^Lt@PlA^tA^ZHT@NDPFj@RD@^PRRPTPXPd@BJHp@@DDnAAzC?~@?pB?tAAxA@h@@|@@t@D^Fl@Nt@Pd@NTX^\ZZP\Jf@DZ?TAPCVIZQRQf@s@r@yAp@mAPWPS`@[TMPE\EvABxBNhF^jDV~@JnATd@LlC|AnAl@j@Jr@FlAMbBYr@Id@CTA^D^Ht@`@z@j@r@|@^t@`@nAPv@NtABzAB~C?~@@f@Dl@Fl@Fd@BHR~@Nd@R^TXXV\Tb@T^JXDJ@`@BhAItB_@vBg@v@OlAEl@?l@Bd@D`AVp@ZfAh@dEfBhAf@xAp@~BbArA`@nAXXFNBLHHBj@JrARf@LTHLBVHl@Rb@VJ@pAlAlCxCXd@^n@Xp@Tn@Np@Hj@JzAFbA?jA?`BA~G?`EAvF?tABt@Dp@Hv@Jh@Pv@\`A\v@d@t@dBbCp@v@^b@l@l@RR\Vd@Vl@Rt@Jt@DX?\A^EZGf@M^InBi@dAWr@SJ?n@Qn@WFCVMPMFGNIFGl@o@xA_BnC}CxAcBdAiA`CqCp@w@zAaBpAyANUBGj@m@lAwA|AqAxBmAlF{BlJcERIZMtCgAJEz@_@jBy@dBu@rD}Ad@U~@e@\Wd@_@HGr@u@fAiBlNeV`DqFh@}@d@i@b@e@NMJId@[f@Sb@Ix@K|CEdMKhIKzEC|B@v@Dv@JtDl@hATJN@?@@L@\BL?N@f@AXANCXE</points>
+                     </polyline>
+                     <start_location>
+                        <lat>43.2063474</lat>
+                        <lng>27.9145886</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>65.3 km</text>
+                        <value>65312</value>
+                     </distance>
+                     <duration>
+                        <text>1 hour 7 mins</text>
+                        <value>4022</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.5550889</lat>
+                        <lng>27.4907584</lng>
+                     </end_location>
+                     <html_instructions>Turn &lt;b>right&lt;/b> onto &lt;b>Route 906&lt;/b></html_instructions>
+                     <maneuver>turn-right</maneuver>
+                     <polyline>
+                        <points>ix_eGq{qhDRFH@FBBBXNLLHFBBTFdANv@LnFz@ZFp@L^PlAv@HF`A|@nDrD^X^VbAZt@Fr@@t@IhAMpBg@bC]`Ba@bA[lCg@pFaA|Ci@dAIr@BRDr@LfAn@l@d@f@h@f@p@t@zAvYho@zCvGbAzBH\T|@Jt@P`B|B|WFh@RtBl@jGr@jHVpBTzC|@~JPvB\rDXnCNv@P|@`@xAbAdDhBpFzBpGh@bCz@pGxAbMl@hERfBFn@HrAFnBRdHP~FPdFJxCHxDDpAHlATvBR|ATbBHf@TdBl@lE^xBPbANn@H\Tv@`A`DtBxG^nAJ`@T|@Ln@Fh@HlABdAARARC\Gb@i@xBkBnHyAxFyC~Ke@tBSjAUbBYnC_@hBWpA{@vCw@vCGPg@nBYxACd@At@@~@@VN\Th@HLFNPTPT`@Zf@XjClAhDrA`Bh@fBj@vJlClCt@`B`@PDRDVDR@h@@`@@L?|AAxBAb@AdACf@ITEVId@SdCgAfAm@VUJIHMNURi@d@cAjCiFxFsLd@s@`@_@h@]tBmAxDsBnAu@|CgBlDoBpDyBlAs@v@k@p@s@z@gAx@wAjAmBrBaDdBwBjDaEt@u@n@c@bAg@RIhHcDpF}BjF}Bx@_@h@Ob@@n@P~NlGpEhBvBz@tErBf@HH@HAHADAHCxE}DXQZKVKVMp@g@|DwCp@c@TMdAa@\Kb@E`A@jAIRIHE\[xD_GbAyAd@s@RWFGHCHEHCHAP?L?HBLDFBDBDDDHNXBHtCjIpBlGl@pBLd@DLBJnA|DNf@@BDJBF@@@B^Xd@ZFB|BvArBpA|@h@h@V@@l@JVDf@F`@DZFNJJNHTBN@R@d@@j@@VAR?@@RFt@?X@LBT?HBLFNFNTh@d@x@vA|BpAfBFRZdAf@bD^xBJbA@L?LEx@]jA_@`Ai@pAw@nAsAlBiAfBMV_@~@a@~A[pAUtAKh@S\Wd@IZAP?JDLBJDDJFLAHEFE`@{@Tq@dAaB`@c@BAx@c@FEvA_@PEf@@fAVj@FP?TCRAPBFBFFBHBL@JATEPEJMHQLYTy@t@o@j@[f@KZ[tBWfBIrAEpAIzAAt@@bABtAF`BDp@Hn@Hd@F^Lh@DRTp@DLNPNJJBLDRB\@n@D~@JdAXrEtAhBj@^TLPBHFJDnAJzAPtC@`@?x@i@nMO~COhCQnBATIfA]bEEv@@f@Af@An@Gp@k@dGc@`FO`BEd@Af@An@AvA?^?^Av@?lB@dB@Z?f@@jA?rAB`ABjA?XC`@CVCVIv@AHAH?J?L@HBJ@DBB@BBDB@BBB@B?B@DAFAHEDEFIDIBKFYB[F]NiAJs@Hc@Hc@Jc@HYLa@\}@DIFQBGf@sAn@aAPUd@m@^i@rAcBVYHIJIJCFAN?DHDDHHFFJHCx@D`GAx@@nF@hBAnBG|AMlBQ~BGbAIjAKdBMvAGnAUdDEj@YlEIbBI|@KxAMhBGt@A`@AX@h@@`@B^Fp@RvAb@rCXhBJv@NdAHv@BZB`@?l@IvAMpAMxB?Z?`@Bp@Fn@PfAPlAJ|@PvADZD\Jj@DPHRLTNPXV\Zh@b@`@X`BrAr@r@`ArATh@BLDZ@T@P?RCVAJCJCLCHEHIPEDKNg@b@c@b@c@^MJKJILEHEHEFCHEJCLCJARAr@FhDDnBDnBDxA?DJjAHlAH`AHbATxCHbAFn@F|@NjADN@FDFrBvCvAnB`@h@`B|BFH`AtAdB~BR\TZrBvCr@`AZd@pBtCrC`EBFXb@h@x@x@lAVb@HLDLLZFXDRJb@F\H^J`@FTFLFLFHJJFDJFJBN?f@DfA?l@AJ@\BRBJBHDLFHHVXXVdAbAZ\^d@VX^j@LJHDRFF@H?HATId@Mj@QRGJCrAWfAUVGXIJ?R?LDJFBDBDFJDPFXLt@Hd@LXT`@FFRTRJVFbABnBGbABb@L@@TXzBxCh@j@B@HD\NX@t@Cz@Kd@Q`@KpAKh@DN@XJvAx@fAj@`@Vf@l@Rr@h@zC^dBd@nBx@hEBJv@lEh@tDP`ARr@NXd@f@nAlAXXVZXXR\Tj@TpAZ|Bf@rCd@lCVxAHt@@j@@vCB^F^Nn@Nj@FVBZFfADdAFn@ZdBHb@\hBRx@Vv@j@hAvAhCn@`ApA|Bv@rAl@|@zAtAxApAjB`Bz@r@nDzCtAlAbAx@j@l@\b@pAbDl@bBt@jBp@jBLXN`@JXFXDPBV?N?VAPEPIVINKPKNGLCLENADCL?J@H?LBLBLFJHHFFFBF@F@J@JCJCHCRKZS\YHOFQHSDQPq@He@Ja@DKDIDEHGNELAR?T@JAHCFEFGFIBENWJONMJEHCJ@B?B@@?BB@@@BFH@D@D@H?H?HAFAHCHS\Y^WXQVOXOZc@pAYfA_AfCOZQX{@`AaA`Aw@|@?@KXEZEp@B^TfAHn@D^A`@ALERSb@[ZMFc@HOFOL]|@o@rBE\CLA`@AVBPDJJLDHLLTT|@t@^Pj@`@\`@NZDb@FfA?v@En@Cb@In@Op@KTKVSb@K\Mb@CL?JAR?D@FBPDJDHFFFBF@R?jAOd@Ev@Kp@?h@F`@D^D`@BL?PAPENEPIpAw@PMPIJCJAT@b@DPBNDh@JZB^@`@@XBd@JfATlAVNBPFRLFH@FFP@H@L?R?`@@XBJDJDHFHHDHBXHVFHBVBf@B^@pBBxAFVALCLCLEBCl@Q`@I`@CXBXLlAt@fAr@l@Vp@\v@`@`@TNLZRXRd@p@L`@FTFj@Dh@@ZFbABr@DTDVHTJRHLJPDBFDPBTDR@J?NALEJELGJKXY^k@d@u@LOX[`@WZKXKz@U`@Gf@GpAO`@GXI^KXMJGBCp@]z@Yz@]f@SZQ`@YPQVOVOVI^KRGLAJ?J@L@RFPJJNDL@N?LAJAZAR?L@P?LFRFPHLLPTXX`@Vb@JRDV?F?HCHALMVe@~@_@l@OZQ`@CLAF?H?LBNBHFJNLPHz@^h@Vl@Z\PTN\RVVJRHRFVJ^JVDNJTP\T`@HTDT@R?RAb@C\ANE\E`@IRGLSTw@p@a@\_@VKNEJIPAF?N?PBJBHBDFHBBD@D@F@H?F@T?X@X?P?NAZ?d@Ax@G|@G\A\?n@@~A?d@?b@BL?H@PB^NZLPJLJNLNZLT^jAFPFPDLHJFFHDJ@FADAFCFEBIBG?K?IAM?CEKIKKSWYMMKOISEMCKESIg@I[EOIMu@eAa@m@IOe@k@EKMSEMEIAGAI?G?I@KBIDIHEFCDAF@F@FDBBBDDHDJDHFLFFFFFDDBF@JBL@j@DZ@P?^B\FNDPJNFJFFBHHFDBF@BHVLb@BFDFB@B@BBHBB?H?PARCTBTHPJ^RPLNLd@n@d@n@RXPXPZDLBL@H?FARA\Gp@Cf@Br@Dh@Dh@BZFXH`@HTLZLVHNVXVVl@\|@^p@V~@`@ZPVPPNLPNPV`@LJJFLD^Hj@F~@FbBNpBh@dBb@XF~ALvALx@FpCAj@BhA?hAD~@?j@@d@@z@Bh@@l@?d@Cj@CZCL?J@LDPFPFNFz@^j@XpAn@n@Z\Lh@TTDPBT?XClBOjGs@jEi@vASnAEd@G~AM`C[`@ObHy@|Fs@vC]LAFAh@C|AQjC[LAbBUxBWXCfCUbDSPAJAnBIbCM`@ArAEJAr@CvAIZAv@ElBGVERIPGxB{@l@[DCBCBCDE|AsB`AyAN]DODORuAPw@NeA@E@E@GBCDG@C~B}BbAeA^_@LOPShAiBZe@fBeCd@o@LSV_@nAiB`AuAlAiBbBgCpBsCvCkEzEgHrDmFdD{EbCoDv@kAXa@T]bCkDv@kADEj@w@p@cAd@q@|BgD|A{BFIj@o@HIpAsAhAmAVUTSh@a@zAy@vA{@bAk@TOh@[v@Ub@CDAf@BnD^D?|CXVBv@JNBB?d@Df@LPFh@VpBlA|A|@`CvAvAx@zBrAbCtArBlAjBfArAv@fAn@`B~@|BpAlDtBVN`@R`BdA`B~@z@f@|ChBlBfAvBnAz@d@x@^^JlANn@BzAGt@Qt@U^Qh@]f@a@^_@h@o@b@u@Ti@dAgC~@aCh@sA|C}H|CuHhDwIbCeGvAmDtBiFZy@dAkCTk@Zq@BGb@u@HK`@g@LOFIJINORO`@Uf@Wf@Sh@QVEREPCT?f@?ZB^Dd@Fb@Jd@NRHd@VZRx@r@~AxArAnAHHnBfBzDpDbFpEhAbA`HpGvBnBvAzA`GtF~BtBlD|C`@b@z@t@vBlB~BxBhBdBBDF@t@bAZb@b@~@Pl@Jh@NdAFp@D~@?fAAlACZQlA{@lE]~AgBjI[|AUbASjAQnAEd@Cd@AfA@|@Bx@Df@Hp@L~@XdAh@dBvCzHbAfC`A|BlAhCtE`KvEbKjAbCn@~@?D?@@?x@hB\n@^n@PVTRNLTPHDHDLFJDRF?@@?BAbB`@`ATpATl@PXJh@RZRf@^ZXVVVXV^JPNXRd@Nj@XxA\jBVzAHf@Pz@`@xBj@nC^vAVbARh@Rf@Zn@Xh@^n@T\PTxAjBxAfBtA`BdAnAbCrCvA`BrBfC|BjCzBjCn@x@~@fAn@t@x@r@lAx@r@^x@Vz@X|C`@@BLFfALd@F`@DR@n@FxADZAb@AXCn@I@?HG|@UxAi@hB_ArBaA|C_BpDeB`FaClCqApCuAvDiB`A_@jA_@bAYr@O^Ij@Kn@I`@Eh@E~E_@fBM|BOjCSfE[zCSxAK`DWtBOjCSpAKn@EvAKz@EjAGp@?r@@fBHx@Jr@JpBd@vA\zBl@fAVlAXXHp@Pv@RbCl@~A^ZJn@Nz@Zj@Zf@^p@r@\f@@BVd@FNRd@Vx@Pf@dAfDz@rCx@pCtApEj@lBL`@r@tCV`A~@|DPp@DPL^H\v@pC|AxE@@lBnG\fAZx@RZNPXXRRTRHFb@ZnA`A|@p@pA`APNxAdAZT\Xx@j@NLl@b@DFpB~ARNLLLFf@`@^XjAt@NHF@b@Xj@\pAr@VN@@@@nBfAZRB@NHB@`@TFDhB~@XN`CnADBv@b@PHVN`B~@^TFDbAd@LFdCpARL`B|@nDnBjDhBdLhGxDtBfE|BxEfCtDrBzEjC~@f@RNfGbDdAn@hB`AnAr@~@p@VNrAnA`DxC~B|BjAhAhBfBvBpBxCtC~CxCfAfApAnAbB|AvErE~BtBlBfBj@b@|BbBhClBRNvAdAh@`@tAfARN@@LJ`Ar@x@t@n@r@l@t@v@tAlAfCRd@pAjCb@fAp@pAn@z@JLv@l@l@X@@r@Zd@NTBvAj@bA^r@VzAj@`Bl@tBv@@?rFrBvEfBdE|ArBv@dFlBvChArHpCnCdAxAh@jDrApFpB~Bz@p@Zr@\|@d@nAz@b@\d@`@~@x@r@v@|@`AtA|AdAjAXZhApAdAlAfBlBhAlA`@l@t@x@l@h@nBdBnBbAJFHBJB`C~ApCxBbAv@n@l@z@`AfBnCnChFjBtD|AxCnAbCvAlCnAhCbAjBv@|A~@jBbAnBp@lAPX\`@Zb@\^^`@b@`@r@p@v@p@jAfAz@t@bA`AnAdAlAhAf@d@r@n@|@z@fA~@z@x@jEzDlAdAvBnB\VDLb@b@fD|CLLDDfBzA`EhDDDHB^`@tBnBpBdBnBhBxCnCf@b@~@t@f@^VRjAt@r@`@h@ZjAr@bAh@dAn@~@h@r@`@x@f@tAt@tLbHbAl@jBfA|Az@LFx@f@fBdADDHDPJ@@l@ZZRFBpDtBrAt@h@ZvDtBZZf@Z`Ap@`@R~GvDr@X\PdAl@`CtAhAn@p@b@hB`AxBnAtEhCrVxMv@^VHx@TXFJBp@HjAJH?H?^?b@APAZCTCt@INC</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.9301276</lat>
+                        <lng>27.7856853</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.3 km</text>
+                        <value>343</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>23</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.5524545</lat>
+                        <lng>27.4903326</lng>
+                     </end_location>
+                     <html_instructions>Take the ramp to &lt;b>Бургас&lt;/b></html_instructions>
+                     <polyline>
+                        <points>ipvbGghxfDV@\Gp@Ud@OLEh@Sn@]f@S\EVAR@VFVJRLVRRZPZJ^H`@Nb@</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.5550889</lat>
+                        <lng>27.4907584</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>3.4 km</text>
+                        <value>3404</value>
+                     </distance>
+                     <duration>
+                        <text>3 mins</text>
+                        <value>161</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.5316086</lat>
+                        <lng>27.4689245</lng>
+                     </end_location>
+                     <html_instructions>Merge onto &lt;b>Route 9&lt;/b></html_instructions>
+                     <maneuver>merge</maneuver>
+                     <polyline>
+                        <points>y_vbGqexfDBv@Bx@FdCPxDPxFPhF@b@@^jAp^T`GBd@B`@Fr@D^D\F`@F`@Lh@Jd@Ld@Rj@L\NZVd@Zb@t@dANPh@j@VXXVpAz@RHVJt@Vx@NvAXjEv@jJ~AjGtAnD`AjG~AjB`@`Dj@~Et@`HbA~B\tC`@~AXhAX^JnAd@nIdDLDn@VtAh@t@Vh@TLDLHPLTPNN`@b@</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.5524545</lat>
+                        <lng>27.4903326</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>1.5 km</text>
+                        <value>1465</value>
+                     </distance>
+                     <duration>
+                        <text>3 mins</text>
+                        <value>182</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.5274866</lat>
+                        <lng>27.4522701</lng>
+                     </end_location>
+                     <html_instructions><![CDATA[At the roundabout, take the <b>1st</b> exit onto <b>бул. „Транспортна“</b>/<b>Route 9</b>]]]]>><![CDATA[</html_instructions>
+                     <maneuver>roundabout-right</maneuver>
+                     <polyline>
+                        <points>q}qbGw_tfD@@?@@@?@Db@DXJ~@F`@@b@B`@@r@GzBCzC?TAb@?fBB~@Bp@Bp@Dv@Dl@JdAHt@NfARtAFXVrABJBLb@bBBF`@zAt@lCnAbF\vAlAvE`@hBh@|BbAxDTv@Lb@J`@HRj@hBhArDDPDLBH@DDTBPBV@V?L?J@J?N</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.5316086</lat>
+                        <lng>27.4689245</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>43.1 km</text>
+                        <value>43097</value>
+                     </distance>
+                     <duration>
+                        <text>24 mins</text>
+                        <value>1461</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.5906656</lat>
+                        <lng>26.9877068</lng>
+                     </end_location>
+                     <html_instructions><![CDATA[Turn <b>right</b> onto <b>Route 6</b>/<b>E773</b><div style="font-size:0.9em">Continue to follow E773</div>]]]]>><![CDATA[</html_instructions>
+                     <maneuver>turn-right</maneuver>
+                     <polyline>
+                        <points>ycqbGuwpfD?BAB?Bm@dACBQT]\wIjHOLqAfAmDrCiCtBqJ`IkDtCqC|B_@XoB`BmGfFeI|GqAfAgBxAuEvDiJzHsAdAcFfEkFlE}@t@wCdC}@t@yCbC[Vq@l@eDpCgBvAcA|@uEvD}EbEuEvDqDzCsBbBgAx@eCrBwEvDmCzBkCvB}DdD[VGFeH|F}E`E_EdD}DfDqFpEwFxEyJbIkEtDgI~GGFyAjAOLuCbCQNy@p@aBrAwHtGaEfDmEtDo@f@kB~AeBvAoEvD}BjBwCdCsD~C_JrH{GvFwCdCiCxBcDjCuD|CsFrEwAlA_G~EWRYXi@l@g@l@_@d@g@r@Yb@S\Yf@S`@Wd@Ud@Uh@MZMZQb@M^Qj@Od@Sp@]zAOp@SbAUtAQjAIx@MzAIdACz@Cr@EdA?hA?|A@vI@t@?lC?|A@`B?vEAxFIbISjKc@|KKdBC`@YpEq@fJm@dHk@jF]|Ca@bDoA|IObA}@rF_AhFAFgAdGgA|FiAbG}@xEiAfGeAxFoBtKuArHOl@iBxJmBnKaAjFo@tDYfBaAdG[rBa@pCQvAg@`Ea@dDGd@Kx@]bDSnBUvBEf@Ix@[rDs@zIu@pLYpFYbHWtHAd@QjFGhEIhFIxIEpHIpKGfKEzHk@jfAEzCIlM?~@?~@SpUMvQA~AA~AErL?|H@hFBvCBxCF`GLjHZrLBj@ZxIPbEPlDn@~KPlCNvBd@fGjAhM|@rIvAhMdAjIjAdIzAnJbAbGfA|Fv@|DtB`Kz@rDlBvI~C|NpCrMfH`\dGvXhBlINl@Ll@bQ~w@~Hl^h@jCj@|ChAdHd@xC|@vGz@fHV~Bl@~G`@lFV`ETdFLtCNdEFpBN`KFpGAnEErPAzHBrL?t@AL?j@E`PCnCEvBCpAEtBEjAO`EQhD_@vFc@nFYlCOlAm@|EWnBQjAa@tCaAtFu@|DoAtF_ArD_AnDc@~Ai@dB{@fC}AbE_@`AqC`HkAnCuGbOkAvCqAtDg@`Bw@pCWbAS`Aa@jBSdAYjBQnAMfAIv@Ed@Gb@ARGr@a@rFGzAEhAIdCCnBCbC?xA?nAB`B?Z@ZFnBF`BLtBL|APnBXhC`@`Db@fCz@bE^|A~@jDl@nBL`@zAdE|@tBhAbC~NpYbEhI`AnBlCvF`@fA`@`A|@fCf@|An@zB^nAd@pBRbA`@nBZjB^hCXxBXpCJrAVtDF`BFbB?BBl@@dAB|AAd@@`BExBExCC|@StEcAdS_@fHe@bKSzEEn@IfBSlHCxAKjDEnDEvDG~J?xIHtKDjGNdQHtX?fJIhRAn@IjHWlLYfIg@zKy@fO{@jLa@zFq@xIcAtM{@pL{@zOe@dJa@vI_@tJGtBa@zOOrHKnGIrGEbECtBA`DCdD?fAA~D?nA?vDBpGBfFBhFHtGFfFJlGHzFF~FDzCLtI@l@@j@DxC`@fZl@bd@l@rc@FfFH~I@|CDbPAvIExHCrGIlGMzHW`M]vLm@pRk@nPYvIInCEhBE`BG|COdHKdFKdJGhL?FCfJ?nH</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.5274866</lat>
+                        <lng>27.4522701</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>198 km</text>
+                        <value>197517</value>
+                     </distance>
+                     <duration>
+                        <text>1 hour 42 mins</text>
+                        <value>6140</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.2143262</lat>
+                        <lng>24.7298557</lng>
+                     </end_location>
+                     <html_instructions>Continue onto &lt;b>Автомагистрала „Тракия“&lt;/b>/&lt;b>A1&lt;/b></html_instructions>
+                     <polyline>
+                        <points>un}bGe`vcDHrRHnJH~GV`N@JXnL@VJrCF~BNzDx@`Rj@nMh@dLn@nNh@`LVdFd@bKZlHXlG^zH^zIj@zKh@zI^tFv@bKh@bGHz@n@bHx@`ItB|QhAfJrAxJvAbJ`AdG`AxFbBrJx@`EhGjZPz@h@lCjCjMxCzN|CjO~@pEv@`EvAbIN`Ax@hFZrBT|Av@hGh@rEt@lHX`Cl@~H^~E\fFNxDd@~If@xJl@bLb@bIb@xF`@zEZtCZvC\tCRpAj@vDd@`D~@dF\lBrAlGl@nC\tA~AhGp@~Bb@vAvBxGj@|AfAzC`B~DhBjEdBvDfC`GpBvEpA`DfAbCrCdHp@jBn@fBvAlEdAjDnAvEhAtEtAtGh@vCj@jDVvAf@tD\`Cd@rEV`CTfCVpDJtABZJ|AJnBB^DbAFjBHvBDvAFjEBbAHnG?p@BnCPlNJdKDbFFvGBfAD|EVlJJvGNlFR|G^nHPlDVlEn@bIb@fFj@nFb@pE\nCBN\~Cb@xCb@tCp@hEpAlHpA|GpAlGbBjHpDzNjBxHfC~J~BnJpAjFzCxLbB|GtAtF|AlGlCnKxA|Fz@nDxDxO`DfMpArFr@`D\fBbAvEz@vEl@~Cx@nFZbCdArIbA`K^rDp@pJ^~G^hHR~FFlCJlFFxEH~KAhG?dDAjAExBAhAE`BK~DWpHKdCK~BQxCEv@MpBM|AG`AMxAKpAQnBKhAOjBQdBS~AWxB}@vHIn@WdBSrAe@|C[tB_DrSa@pCkFl]eBdLe@bDu@vEa@pCe@`D_BfKwAhJk@tDyCtR{@tFoA|HcA|G[vBWdBu@rFIh@Gf@[zBOnAy@jHMhAWxB_@tDk@lGe@|Em@xHQfBOfBWzDOdCSvDKxAQpEYxGQfFMjDKrDMjFKjFCtBIxGEtGAhF?rEA`A@r@?lBDrID~CJzIVpRFjF^tYRbOHhG@`@j@nd@DzCBrBBvB@xB@lBB~B?zC?~A?xAA`EA`BClDEdEC|AIxEK~DCnAMvDQfEAf@[bHEp@S`DU|DIlAe@nGOpBo@pHWtCu@xI]|D]~DQpBOpBSrBKlAUrCEf@g@`GWtDGv@W~DIjAOxCOrCCj@O|CQlEATIzCItBEpBGtBEnBAf@?h@GpEEjC?jAClGA|C@f@?tEBtEDdFD|C@d@JfFLdFHtCDlAFzABv@@FHhBHnBj@~MFdBPhEJtBDnA\rITjF^xIh@lMHv@JrBR`Fb@dKDjAJtBP`ER`FBh@VlGXrHZrH^xI`@~Jp@`Qh@nNRfETtGVrHXbKNjFLjGBjAFvCHpFJvHHxIDzHBtHDjQ?|CArHArEU|a@IdQi@jg@OjQQh[ErJ?T?b@Ab@KvQA|EI~\ClI?`MNbMb@tJ^fGn@|Hp@rHp@fF`@~C|BvNvBdKfBzHjCzI`C~G~BfGlF~LlFxJrZzd@tEfHbBtCdC`Fl@tAbBxEjAnDp@~BRt@Tz@H\h@lCr@zE\~Bb@jDRxBh@fKLzF@xFa@fMSlCWtCa@rDcApH}GtW{BlHyBrHyChLcAdFg@hCYzAcAlHe@nE[`EY`FMtEIbHBdI\tIn@lKnAhK~@xFr@~Dt@xDh@zChKzk@hCbNzChPhCbOjAxGj@hDxC|PRhABHP~@z@vEvAzHBNPx@TpAp@rDHh@hA`G`BxIzAfIr@nDtDzPl@jCtArFzArFZhAZfAf@~Ar@dCv@fC`AvCt@zBhA`D|AdE`ChG~AzD`AzBbBvDbAxBfFhK|@hBpA~BxAlCjApBrA|B|DvGjDfGnBtClBvCpAnBtBbDlArBbAbBjB~C|ArCzArCt@|Ar@xAr@vAvA|CtA|Cp@~Ap@`Bl@xAb@dAz@zBjA`DdBbFpBdGn@rBpAlE\nAp@bC|AbGp@rCf@tBl@lC`AtER`Ax@fEx@pEpAnIz@~F~@nHh@|EZ|CFl@XtCXtCNjBPvBVzD`@`HhAlSXrEVtE~@rP~Bz]`BlYhAnSx@tNbAdQ|@nOx@tNb@xH^jGLpBn@tHRfCFt@j@zFDb@z@xH~A~LLx@z@dGhA|Gd@tCnA`HlVdnAxFlYl@vCpAbHvAbIx@|Ev@xEv@dFPbAPbAhBzLnB|LtAlIhBzKd@pCr@|En@|Ep@fFV|AT~A`CvN\nBXjBXpBh@xDh@vDz@fHdAjJPxAr@`Hd@lFh@tGD\h@vHZfFRbETbFX~H\`IRlKLjMFn_@Nnt@Nts@VbhADzJFpGRdLPhIZjITrFN~DFz@JbCh@xI^fFz@tKd@lFXzC`AfJh@lErAhK~A~KhAdH|@lFX~AfA~FtCjOhSzeAhAdGbBfKv@fFfAxHf@|DdA|Ir@lGn@zGj@`Gf@xGVtD\dFHhATdEX~ETtFHxBx@fYJvDLfF@d@bA|b@LjE@^LhEl@`TT~HTlId@rPj@tRLtDLjEl@tMLpBX`Ff@tH\hELbB^bEt@fIb@hEj@~El@`Fp@jFl@nEb@tCLx@Z|Bt@`FTxAf@zCvBbNjB`LjAfHvBvMXbBrAtI~@rFhAlGhAnFrA`GvApFzAtFb@vADLt@dCh@`BNd@hAbDjAdD`A`Cl@`B`AzBVl@z@rBr@xA~@nBf@fAzAtCd@~@zApCf@z@lAtBlAtB~ArC|ApChApBhAnBnAzBdAlBzBzDr@nAhApB|AnC`BtCnBjD|ApCzAlCnAxB~DfH~B`EnAxBn@lAn@lAp@pAvAtCxA|CrAzC`A`C`A`C~@`Cl@~Al@dBj@`BNb@ZbAj@dBh@bBv@jC`AhD|@nDXfA`@dBv@nD`AtEr@xDPdAp@vDd@xC`@nC^tCTlBf@~D`@xDXzC\zDRpCRzCN|BDp@ZhGPbDDl@f@tJ@XNvC@R@JDz@Dx@~@zP^pHNpC~Bdd@`AnRbBlUv@tIh@dFJ~@D\n@xF|@vGh@rDlAzHr@|D|@~ElAjGx@|DxAzGhCvKnCbKhAzDdB`GhBxFpArDrDdKbNv]vGlP`AdCj@vA|AbE`DpItChI`ApCnBxFrGzSzCpKpAtEnBnHnGbV`CbJpClKzCjLnDzMlCdK|CjLjBbHpBdHpElO`@jA|@xCdDxJfA`DjAbDzBhGlBbFdBpExElLrA~CrA|CdA~BnCbGxE|Jr@vAx@`Bp^js@|GxMhF~KhEvJ|BnFtEtLbCrGlC|Hb@nA`AxCvB~G@@lCdJbBdGnArErAlFz@hDxAhGtBhJjFfVdD`SfDtUdAlInAhL`@zD@Lb@hEpNdzAjBxRrBtRnAlKtAnKvB`OnApIfBpKfB|JxEbVtFvWbGbYfM|l@|@~DpFlWjExT`CbNh@tDtA`JlAhInArJlApJvBbRVtBHl@rMdjA`@pDL|@|@vInD|Z`BrN`AvHr@dFx@jFpA|HhA~GhA~FjA|FhAhFhAbFrCxL`BvGlBzG`BrF|A~EjF~OfEhLfAzC~DlKhCdItChJ`DlLvBnIdCbK|@hEnBlJpBpKf@zChCtOLv@nAxIbAdI?@|ArNTtB~@jKz@xK`AfP\|GtDd`AhAbY`AfVDvAr@vPPvETrEPvDT~DT~Dd@nHtA`SnAxNnAlMv@hHp@hGlAxJhAlIv@tFfAvHLp@Hj@DZ@BDX?@RlA\rBlCtO`@xBP|@fA`Gn@`Dt@pD\|Ab@xB`FpU~@lEzMhn@Hb@rGpZdFbVnDtPR~@jAvFJl@dAnFfA|F~@hFf@`Dv@tE?D`BpKRpAr@bFp@zEx@xGp@pFv@xGfAfKzA|Oj@fHp@pIj@hIh@lIf@bJv@rPf@|KTpF|@vRTdFXdH`@bIh@|Lf@bLN~CN~CBd@?@Dz@T`GbBl^fAbVNdEj@dNb@bIDhANdDj@tJbAhOj@nIx@pJ`ApKXnCdA|JfAtJlArJvAtKr@xEl@xDdBzKlAfH`CpMhBdJlBbJ`C~KbA|DlBfIdAdErDhNfFdQbCbIrEdNbCbHhDjJzAfEtDzJ`BtEVr@\dA\jAlAxDhCbJ\jA`@nBh@vBf@nBv@rDlAjGtBjMNjA\dCp@`F~ChUhInm@tDbYx@xF`CbQl@~E\dCr@fE\dBLn@dCvK`@xAL`@Pl@DJTr@l@nBDNb@rAXt@b@jA|ApDx@jBrB`E|@bBpBbD~@vAjBlC|ArBdC|C`AbAvBvBx@t@xAtAZZvCvChF|Eh@j@LN~A`B\ZxB`CtA|A`AdAf@j@t@z@bAfAvA`BdCvC|@hA`AlA~B`DnAhB|@pApBvC\h@f@r@f@v@b@p@h@~@r@jAr@lAr@jAXd@LPx@rAnApBf@v@h@z@bBlCv@nAh@v@Zd@r@bAT^|@lAj@x@TZd@j@bAvA~ArBzAvBb@h@vBnCv@`Ap@v@`@d@VXnT~UlAnAbAdA`BhBjDvD~CjDpCrC|EhFrJjKdBfBtBbCrBxBjBpBdDpDdBnBfBpBV^fAtAp@`AbA~Av@jA`AbBlBhDpApC`BzD`@jA\|@x@fCz@dCXdAt@hCnAvFl@fD`@~BnAlHXlBf@vDLx@Hp@r@xEDXFXPdA@@BXNfABL\bCb@vCj@xDj@~DHj@VdB^hCRtATnAZlBn@fE`AzGz@~FlAhIr@zEZrBVlBt@`Fr@xE`@nC^bCj@~D`AhGf@lDb@~CbAvGv@zEf@tCf@jCf@jCjAdGJj@Lj@t@hD`DxMjAnElApEnAlE`AbDbBlFtAbEvAbEpBnFj]z~@|JdXpQre@bApCjA|C~@jCpAfDbAnCb@hAXv@|@`Cl@~Al@~AfAtCvB~FbBrEfBvE`AlC\`AxBdGlBpF`ElLt@zBj@bBj@~Ah@dBr@vB|BbHzF|QRl@Pl@~BzHfCbIdAnD`@rAL`@L^~E`PzBpH~@vCjAtDfBdGzA|Ez@tC|@lCbAbDv@jCdAhDbAfDt@bCh@hBj@jBr@~Br@xB^nAt@hCZbAh@~Ar@`Cj@jBh@fBv@fCZ`Az@rCz@rCXdAZfAfDxLhBbHfC~JfBhHvClMpClMtB|JrBfKdA|FjBzKnAnIhA`IfAnH`BvLhC|Rl@`F`A~It@hHNvAp@nHTbC`AfLx@vJl@pIn@lJd@fIJzBd@dJDn@NnD\tGd@fJNrCN|Cx@hOh@`Lp@vMVpFDnALzBj@bLNdDZzGDf@Dj@ZjFdApSpAxZh@`Oh@|P^rRf@z_@JfJDvJ@jPA|NGtQKpOEzC?Nc@nZm@hb@GnCGnE?h@SdLg@p^S`KKnHKdHw@~i@]dQ[jMA`@OzEq@jQMnDaAjTk@rKgBlYc@tGa@pF_AfLgBzRcDx\It@Kt@yAtMeAvIq@lFkA~IIj@CR?BG\QtAWjBoAxI{@zF{BvNgCjOw@jE_CjMoA|GsBxK}BhMm@|C{ArIkDbRiA`GmCfO}AfIkDhRyC~OoBhKyAzHo@vDMp@oGp]qBrKk@tCeC|M{@tEe@fCGZADG`@Q`AMt@mDvRoAjHCNkAxG{@|Fa@vCa@jDa@pC[tCq@nFOnAw@pHiAvLk@pGi@hH{@tM[|FIrB?HQzCe@fMI~CO|EKpEQ~HAn@CdBCfBAdAGlFClF@|D@pC?vD@tBBxCBzHJrFFlCDpA\bLPjHBp@^hJRbFLxBX`FHtA@Z@FBv@HfA`@pFV`DBf@r@xJVxD~@bNTxC^`FPpC^jFf@fHl@pIfAzOV|Db@tGTbDb@pGTxDJxBHzAPnDN`DDn@PbENxDR|FNnFDrATtIHxDJ~FDzD@tBDzG@vE@r@@bG?`ABbE?lBAdDCjCAzFCvACrDEdEIbFEjDIpDMpEMvEK`EItBGbBQjEMfDGfBMdDGjBO~DK~CElAOtDO~DKbDQ|Ek@xNQlFYhHEdAQdFOdEUtF[`Ju@~RW~GUlGEfAQbGM|FK~FAbAA`AArBC|C?rAA|CAbA@vB?~A@bC@vBDpB?tABlBDzBDpBFxCNpFLxDD`BDbBFjCB|ADlCBlCB`C@nC@vC@`CCzHAvECtDK|FI~DOnFKzDWlGe@pJi@rIi@tHa@nFEbA[fFUzEKzBUdFQpGAf@OdGIxEG~F?PCzJ@vABzI@zAJvKF`GRfOPlQHjEHjGPhQRlQJrJJlHHjHLhIDzBD`CL|G?D@J?N@LB`ALrFLdFB\?B?TBj@r@|Sf@rMl@zLt@zNZpFXlFh@~Jp@vMn@rLhAfTRxDZhGfAfSp@pMj@tKt@bNL~BZ|Fh@|JB\XtFdA|SNjCBX@V`@bH\hHHlAd@`JLdCRjERlD\dID~@PtDL|D\tK?VLdENdIPbMPjZ?fMChMOhP]rMQzI]xK[rI[jIy@~OyF~iAKxB[`G[tGg@jKc@`IY`G]`IWxFM`ECr@S`IQzGQfJIpFIjHEhHCnI?z@?\?`@E`KJjK@P?F@h@?h@?T</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.5906656</lat>
+                        <lng>26.9877068</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.3 km</text>
+                        <value>288</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>23</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.2150663</lat>
+                        <lng>24.7298594</lng>
+                     </end_location>
+                     <html_instructions>Take the exit toward &lt;b>Plovdiv&lt;/b></html_instructions>
+                     <maneuver>ramp-right</maneuver>
+                     <polyline>
+                        <points>q~s`Gs`}uCK|BEb@I^MZQPSLUFI?GAOCMCMIIGGKM[GUCS?UBYFYn@mA</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.2143262</lat>
+                        <lng>24.7298557</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>6.0 km</text>
+                        <value>5951</value>
+                     </distance>
+                     <duration>
+                        <text>7 mins</text>
+                        <value>398</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1627543</lat>
+                        <lng>24.7430896</lng>
+                     </end_location>
+                     <html_instructions>Merge onto &lt;b>Route 64&lt;/b></html_instructions>
+                     <maneuver>merge</maneuver>
+                     <polyline>
+                        <points>ect`Gs`}uCrBg@bAWn@O~A_@bFoAzEsAbGwAhA]n@OhM{CvEoApGaBlCm@tBg@lCq@FA|DcAxD_ApD{@jBa@v@Mb@G`AKfCStBMdDU~DWbBMlDQdAIbAItAIlDUjDUzDYdG_@nBMd@CrIk@|AIxAKbAMj@OnA_@pAg@bAa@f@Un@[lAi@|Ao@hFyBdBy@zB{@dH{ChCiAZMZKf@Ob@Kf@M|@MhDa@v@KH?l@IBAlFi@rKeAdBMjG]`FSh@C\C\AJ?lAG`BGNAPAd@Ap@E|CMtAIxCO~FStBGnBG</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.2150663</lat>
+                        <lng>24.7298594</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.3 km</text>
+                        <value>348</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>54</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1629204</lat>
+                        <lng>24.7471279</lng>
+                     </end_location>
+                     <html_instructions>Turn &lt;b>left&lt;/b> onto &lt;b>бул. „Дунав“&lt;/b></html_instructions>
+                     <maneuver>turn-left</maneuver>
+                     <polyline>
+                        <points>e|i`Gis_vCVCCW?g@AOI}Be@iIK_C?YBS@OB[AK?e@</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1627543</lat>
+                        <lng>24.7430896</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.4 km</text>
+                        <value>425</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>62</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1592889</lat>
+                        <lng>24.7486296</lng>
+                     </end_location>
+                     <html_instructions>At the roundabout, take the &lt;b>1st&lt;/b> exit onto &lt;b>бул. „Цар Борис III-ти Обединител“&lt;/b></html_instructions>
+                     <maneuver>roundabout-right</maneuver>
+                     <polyline>
+                        <points>g}i`Gql`vC@A@A@C@A@C?A@AfAc@rCy@x@UtDeA|A_@dCk@HCNO</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1629204</lat>
+                        <lng>24.7471279</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>2.5 km</text>
+                        <value>2540</value>
+                     </distance>
+                     <duration>
+                        <text>6 mins</text>
+                        <value>359</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.13681589999999</lat>
+                        <lng>24.7521961</lng>
+                     </end_location>
+                     <html_instructions>At the roundabout, take the &lt;b>2nd&lt;/b> exit and stay on &lt;b>бул. „Цар Борис III-ти Обединител“&lt;/b></html_instructions>
+                     <maneuver>roundabout-right</maneuver>
+                     <polyline>
+                        <points>qfi`G}u`vC?@@??@?@@@@@B@@@@@B@@?B?@?B?@?BA@?BA@A@A@CBA?A@A?A?A@??AP@lA_@pAS|ASvAMjFm@VEn@K\GFAzCq@`B_@REVI@@?@@@?@@??@@@@??@@??@@?@?@??@@?@A@?@?@??A@?@A@??A@A?A@??A@A?A?A@??A?AJC`ASzBg@ZIB?PANAR?J?J?XBr@DX@H@PBl@D`@B\FhAGdCSLAhBQvB[RIXG|@Q~A[DA`@I`@GtAYbC_@RBv@O|@Kx@GV@L?H?hD?B?f@?j@ATAN?@?VA@?RA\AXAD?fDOxBQ@?tG]~AIfOy@x@K</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1592889</lat>
+                        <lng>24.7486296</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.6 km</text>
+                        <value>614</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>80</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1354397</lat>
+                        <lng>24.7452837</lng>
+                     </end_location>
+                     <html_instructions><![CDATA[Turn <b>right</b> onto <b>бул. „Христо Ботев“</b>/<b>Route 862</b><div style="font-size:0.9em">Destination will be on the left</div>]]]]>><![CDATA[</html_instructions>
+                     <maneuver>turn-right</maneuver>
+                     <polyline>
+                        <points>czd`GglavCRDRHHDHDVVBBLJ@XJtA^xEBVHfAFt@B\t@|KLzBDf@TnDDr@</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.13681589999999</lat>
+                        <lng>24.7521961</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+               </steps>
+               <traffic_speed_entry/>
+               <via_waypoint/>
+            </e>
+            <e>
+               <distance>
+                  <text>144 km</text>
+                  <value>143756</value>
+               </distance>
+               <duration>
+                  <text>1 hour 41 mins</text>
+                  <value>6046</value>
+               </duration>
+               <end_address>Sofia, Bulgaria</end_address>
+               <end_location>
+                  <lat>42.6977148</lat>
+                  <lng>23.3218696</lng>
+               </end_location>
+               <start_address>Plovdiv, Bulgaria</start_address>
+               <start_location>
+                  <lat>42.1354397</lat>
+                  <lng>24.7452837</lng>
+               </start_location>
+               <steps>
+                  <e>
+                     <distance>
+                        <text>0.2 km</text>
+                        <value>226</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>65</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1353033</lat>
+                        <lng>24.7425477</lng>
+                     </end_location>
+                     <html_instructions><![CDATA[Head <b>west</b> on <b>бул. „Христо Ботев“</b>/<b>Route 862</b> toward <b>ул. „Цанко Дюстабанов“</b>]]]]>><![CDATA[</html_instructions>
+                     <polyline>
+                        <points>oqd`G_a`vC@J?LFrA?RHfFFvD</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1354397</lat>
+                        <lng>24.7452837</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>69 m</text>
+                        <value>69</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>39</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1359248</lat>
+                        <lng>24.7425134</lng>
+                     </end_location>
+                     <html_instructions>Turn &lt;b>right&lt;/b> onto &lt;b>пл. „Гарата“&lt;/b></html_instructions>
+                     <maneuver>turn-right</maneuver>
+                     <polyline>
+                        <points>spd`G}o_vCeBDU@</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1353033</lat>
+                        <lng>24.7425477</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>8.4 km</text>
+                        <value>8413</value>
+                     </distance>
+                     <duration>
+                        <text>14 mins</text>
+                        <value>841</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1883512</lat>
+                        <lng>24.6801012</lng>
+                     </end_location>
+                     <html_instructions>At the roundabout, take the &lt;b>3rd&lt;/b> exit onto &lt;b>бул. „Васил Априлов“&lt;/b></html_instructions>
+                     <maneuver>roundabout-right</maneuver>
+                     <polyline>
+                        <points>otd`Guo_vCEAAAC?C?C?C?A@E?C@CBC@CBCBCBADCB?BA@?@A@?B?@A@?B?BAD?D?B?D?D@B?D@@?@?@@@?@@@?@@@U^IRo@x@mBfCiBhCmBlC{@fAi@v@AAA??AA?AAA?A?A?A?A?A?A??@A?A@A??@A??@A@?@A??@?@A@?@?@?@?@A@?@@@?@?@?@?@?@@@?@@??@?@@?_@t@wAfDaBzDkBzD[v@}@rBaAtBQ\QXMRqAr@cBt@i@T{@`@cAf@}EzBuB~@MFmAl@eAf@OD{FFsB@WIU@M?{RA_B?{CJQ?K?A?E?GAS?O?aB?G?iA?E?gB?Q?C?O?U?SAU@U?i@?uA?y@BsGXcBFc@BWBmGrAk@Hs@LcBXy@NYFyBv@MJCDmFdISZS\gDrFKPeChDeCtDwBnCa@h@ETc@d@iApAgBxBSVaAlAw@`AoA|A}@`A{AjBw@dAo@z@EFe@l@aAdAq@|@y@fAe@z@}@xA[j@_ChES^a@v@c@v@gCvEaBvCYf@oChFi@x@q@bAKRuBjEo@jAS^KPc@x@Yd@eAnBkArBeAxBkAtBy@zAyEnIGLkCfF{ArDoBnGqGnTwA~E{@tCaAdDsDrMiBrGi@nBg@hBiG~S}DdNeBfG_@`Ba@jCIl@CTIv@IjACz@KjE</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1359248</lat>
+                        <lng>24.7425134</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.9 km</text>
+                        <value>892</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>44</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.1923761</lat>
+                        <lng>24.6712203</lng>
+                     </end_location>
+                     <html_instructions>Keep &lt;b>left&lt;/b></html_instructions>
+                     <maneuver>keep-left</maneuver>
+                     <polyline>
+                        <points>e|n`GsisuCQjGUxC_@xCGVi@~B?@Mn@{B~GKReDfGeBzB}BjCu@~@uA`B</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1883512</lat>
+                        <lng>24.6801012</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>121 km</text>
+                        <value>121205</value>
+                     </distance>
+                     <duration>
+                        <text>1 hour 7 mins</text>
+                        <value>4011</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.63334220000001</lat>
+                        <lng>23.4475946</lng>
+                     </end_location>
+                     <html_instructions><![CDATA[Take the ramp onto <b>Автомагистрала „Тракия“</b>/<b>A1</b>/<b>E80</b>]]]]>><![CDATA[</html_instructions>
+                     <polyline>
+                        <points>kuo`GcrquCq@pA]r@Yr@c@lAk@jBoB|G_F~PyY`dAW|@Md@IXQn@ABELy@~CQfAGh@Ct@Cz@DrAJpARfAPv@p@pBXt@Nd@Tx@Rr@Jd@F^NzBT~BPnEHrCF|AJtDNtGJpEBjA?f@FzD@h@JhJBlC@jAD~I@rE?zBCxPGbIE|DApAEvDEdBQ`JCxAIrCMfFO|EMvDCv@QtEKnCKrBUtFKrBOpCO~CMtBStDa@~G_@|H[vFa@vGc@fIc@dIAFQzDu@jMm@|LwAvWKtBe@xHEdAWnES|Di@zJu@xMsBx_@eB~[WjEq@lMQ|DMfCa@nIOdEKnDUfISbJIzFCxAIrJEhKA|J?xDAdKArHAjNKrjAA`MCr^C~\Gpu@ApKApGC~U?D?H?xAGby@KbQOtLG|DQvIOlFWpISzFKpCq@fOk@zJgAzRiBtZeBbZAHkApSoAlT[pF_@fGo@dLMnBy@fNy@|NUbDa@xHkBr[GlA?BStCcBvYqAhT}@tMUrCSnCqBnTa@`EuAxLY`Cc@hDgAjIq@fF}@pGiCzPkAzG{CxPgCnMe@tBmBzI}B`K{C~LoDzMiCdJkDlLeCtHwCzI_E`L{AbEq@dBKT_ChGaE~J_DvH{D|IyDhI}BzE{AxCuAtC}CjGaC~EgAxBkBvDkBvDs@xAu@zAoDlHeEnIaElIqDnHiBrDOZoCtFqEhJ_DnGoCtF{BtE}BrEuAvCyAxCu@zAeBrDy@jBYn@s@~AqAxCeC|FsA~Co@`B_A|BmB~EmAbD}AdEkAbDiAdDyAfEy@bCeBjFy@lCqAhEcDxK_BpFwHtW}ApF_EdNqCrJ_BrFcAlDiE|NwA~EmDbMeAxD_DpK{B~H_@nAK\IVq@~BWz@aBxFqDjMeF|PAB_DxKcCvIi@hBsBxGqDhLM`@oAtDmB|FsB~FyBtGeHhS}DdLuFbPSl@EJ?@A@M\CFAHoLz\cAvC}CjJm@jBgBvFM`@oBnGg@bBi@jBW`AuBvHkBfHoAdF}@nDeAlEcAnEsAxF_@bBkAhFuB|I}EpT[pA_@bBCDS|@cLdg@aC`KkAtEuB`IUx@{AnFwCrJ_DlJgDrJ{HjTIRq@nB{AfEaAjCiBhFyCvI?BqCxIq@zB_CnI}@`Dm@|BwAvFaB~GoB|IYvAqDpP_DxNwDdQq@~Ce@xBaBpHuC`NWfAQv@_EhRYpAyCpNiBpJiBjKmBzLg@dDYnBkBpNi@vE_BfNqAhMa@tDy@|Ha@fDqDv\g@zEq@zGy@vH_AzH_@|Cs@~FyAdL_BnKOhAQfA[xB[|B}@hGiGvb@y@nFgBdNc@tDg@vEe@~Dc@lEo@hGsAzNg@tFO|AqBfRANeA~Kq@xGe@~D_@hDaArH]bC_@pCs@vEiBvKMx@g@jCgIrb@{H~`@Kh@Mj@yD|RwArGoAvFu@~CcA|DiApEwAnF}AxF_B|FcFfRaAlDiAdEgBvGcCnJaB|GmCfLsC|McEjS_ArEO|@}BfL_ApEm@|CERyAdHqAfH}@`Fs@fEi@bDeAhGaArGo@pEuAlJaAtHgBbOsE~b@AJ_ArJQbBGf@YlCuCvY_B|OM|A[jEIrAEx@Et@KxCEzCCbB?zA?hA?fB@vAB~ADtADxADpAFpAFlAL~AH|@NfBt@~HRlBNtBFlA@NHnBDlB@jA?`A?bAApBEdBMpCGnAIbAKdBGvAGxAErAEfB?FAjC?l@?f@@v@DbBDlAD|@DdAXbGFhBDjB@vCElDGlB[dGWzC{@hIYnCI`AWtCIrAOlCUnEI|BA`C?`@DvDHrBDbADt@Br@HtALbCb@xFf@pFv@|H`@hD\tCPlAXnBRjAPz@Rx@FX`@bB`@vAb@vAd@zAt@pBl@xAb@z@`@t@Vf@b@v@Vd@f@z@nDzEzAxBpCbEnC|DbCdDxFjHPTPRZd@^d@d@n@r@`ARVbFzGp@~@b@n@fA`BrC`Fl@vAp@zAl@`BTp@Rp@ZfAVv@ZpA~AzGfGlVNn@Pl@`@dBp@bCV`Ab@`Bd@nBXpALn@Lt@ZnBL`AV|B@J@PB^Ft@HtBFxC?xACfCAXCj@ARKtBKfAMjAOlAQfAO~@Or@Or@Op@YfAW`A{@bC_@~@Sd@q@tAaBnCeDxE_AnAcF~GiAbBuArBy@pA{@tAw@tAc@v@}AvCc@z@qC|FeAbC}CjH{CbH_AvBs@~AgBpDo@jAm@hAw@pAU^e@t@m@|@i@t@g@r@k@v@_AjA}@hAcApAg@p@aAjAUZq@z@y@dA}@fAm@x@sAbB}@jAi@t@k@x@c@t@U^e@z@s@rAg@fAa@|@k@xA_@dA[~@]hAK`@W~@YhAW`AI^ADELMh@Sz@g@vBg@vBa@bBm@jCe@jBWbAQn@Uv@[bA[bA_@`AO^]x@Qb@a@x@e@~@QZS^g@x@e@t@i@v@i@v@kAdBgA~A]f@kEjGi@x@}@rAg@p@}@rAy@lAq@`AaAxAq@`AU^]h@m@dAcAnBg@hAuAvDkB`H_AnE_@`Ci@jD{AlMY`DQnAUnAQ`AS~@]~Aq@pC[fAY|@]bA[|@c@jAm@vAGPi@hA[p@g@~@_@r@e@v@w@pAy@nAi@x@w@nAy@nA_B~BcBfCw@pA_@t@cAnBu@~Ai@rA{@zBcAxCw@bCo@vBk@jB}@rCa@lAg@zAy@tBk@rA_@x@k@jA}@hBcAdBy@tAmAnBkDrF[h@e@v@iApBc@v@a@t@u@vAa@v@o@nA_@x@m@rAcA|Bm@xA{@tBo@`B}@xBy@vBwAnDa@dAa@fAc@dAq@bBo@xAWj@c@z@{@~Ai@z@a@p@SXW\a@j@{@fAgAlAw@v@o@l@_@\g@b@YTe@\iAx@o@^g@Xc@Ti@X{@^y@\m@TgA\s@Ru@PmAV{@LkBTo@Fw@B{@DsBDcCHS?_AD}@Ds@DcAHy@HeAP_ANgAVc@JmA\s@To@TwAl@wAp@a@RcAh@gAl@cAn@uAv@gGnD}@h@cCvAw@b@kGrDcCvA}A|@yBpAu@`@s@`@q@\eAf@m@Xy@\eBn@w@Vm@PaB`@kB`@cDh@{ATaC^yDh@qDh@oJtAyB^s@H{@P}@Pi@L}@Tg@NmA^[LaA^e@RkAh@q@`@cAj@i@^k@^SP[Tq@j@s@n@URq@r@_AbAu@x@a@b@mBzBa@b@o@r@w@x@q@p@m@j@m@h@eAz@q@d@o@b@s@b@i@Zg@XgAf@wAl@{@Z_AVe@NgAVqB`@y@LeAPi@HeCb@mCb@oAVeATm@LYHqA\]J_@JWJuBt@wCrAoEzBsDrB{C`BuC|AoAl@m@ZmBz@gDtAsBt@wC`A}Af@cAZcAZ_GjB}C~@gBj@}@XyC`A}Br@kF`BmA^uAb@eAZeA\sBj@WFkBd@{AZ}B^eALoBRmCPa@DK?[B[BaAFqAHqCTwANoARqB^{@PqAZcCv@sBv@k@Tc@Tu@ZaAf@qBlAo@d@WPmAz@kA|@gA`AQPgA`A}@`AcDnD{ClDoDnEmCbDMLgGhHeEvEaDdDyBnBgCxBoB`Bw@p@kA|@iI`H_IjGoE~DsBpBeAjAaAjA_AvAeAjBw@|Aq@xACHk@|AeAlDo@~Bo@tCc@dCUjAeB`K_@hBcA|E{A~GeAdEaAnDg@zAgAfDwAzDaCfGITwBbFsG|O{C|HcAnC_AjCA@gAjDcBpFqAtEcDrKyAhFmBxGENgBzFWn@u@rBcA~BABiAtB]p@{BhDeBtBEFgAjAkAhAcAx@mCpByBxAqBrAsFlDyB~AyDvCaA|@A@{AvAkEbFm@z@ORMRMPA@MP]j@EHU`@QXYf@_@t@]t@]r@CFiC|Fo@~A{@rBwFbNy@lByA`D{@zAOXyC`F_BtBa@d@eAlAsAtAeDzCaCrBiH~FqBdB{@r@{PvNgZrVaBtAiA~@_BxAwAtAMLkBtBwAnBORe@v@m@`AkDxGoBzDyBjEWf@eCbFGNGLGJELgExI}@zAyAvBu@bAmApAc@d@{BvBaAx@sA~@w@h@kCzAcDdByFzCYNmLjGqEnCoAx@wBxAiClB_EhDgB`BgBbB{@|@kBzBA?aCxCiB~Bk@x@SXsArBqCpEeAhBs@pAgBrDoBbE]r@S^cBjD_D~GIRMZ]x@{CxHmBpFc@nA{C~Is@vBk@fBWr@KXKXEJEJIRSl@aBxEgBvEg@lAKT]z@OZoExJq@tAqBvDcApB}ClFwDfGqEzHgBfDkBnDMXMX{BxE_DfHuClGwDnIyDxIgGbNeFfLwDfImI`RqA|CO`@o@hBK\Uv@Uv@cAdEShAWxA_@dCSxAIv@AFGp@CXOlBM|BI`CC|A?JGlGElEIjCElAQbDS|B]lDc@tCiClO}B~Mg@`DQ~@QbAg@fC}@hDi@hBO`@]`Ay@nBsD|HgAzBu@jBq@jB]dA]nAe@fBu@bDw@nD_AdEWbAYbAI\IVa@dAi@lAe@dAa@z@MTOTQ\m@bA]f@s@dA]^W\UZk@j@c@^a@\YTu@f@w@b@s@^OHGDIBo@Vo@Ts@RkAXiB^{Dr@g@HoB^cARc@Jo@Py@Tw@XeAb@o@ZsAx@m@`@_BnAg@b@ONkHvHcA~@q@l@q@h@o@f@s@d@g@Za@Va@Tk@Xs@Zs@ZkAb@iBp@eBn@kAb@qAl@s@`@o@b@o@f@o@h@o@p@}@~@}@bAy@hAu@lAi@`A_@v@GN[r@e@lAQb@Qj@Y`A[dAWhAOr@S`AGZ?BEP_@bCMdAG~@Cr@A~A?zBAjDA`BCrAGhBOjBIx@Gv@QjASpA]xAg@fB]jA_@nAw@zBQf@CJSf@iAfDyBlGuB~FqBnGcAbEe@pB_BpH_CfK_BpH{@nDg@bBk@`BUl@q@xASb@Yd@qAnBi@p@]`@w@`Ai@l@kA`B_@h@CF]d@oB|CyAzC}@fCi@fBEJs@xCQdAIf@Kr@Kr@S~BMdBAHEv@Aj@EzB?|BBhBDvANdCTzBb@vCv@dEbA`Fb@lCVzBLnBJfBBzA@hAAvBAbACfACj@GzAKjCErAQ~DEzAUpFG|As@`RU~FGjAKjAIbAOnAQdAQdAMl@S|@On@IXW~@Qf@A@Of@ADCBi@|Am@vACDO\MZw@fBwCzHg@vAWx@Sx@_@~AYnA[xBQvAOvAKfBExAEdA?|B?dBHjC\hFzAzRL~CF|BD`DCvCIbBKdB_@zDSfBc@bCy@pDg@hBw@vBc@dAA?u@|As@tAoArBcB~BOTEFA@A@ORaChD{GfJeB~BeAzACDcAhBy@zAqAzC}@rCi@|B[hBEZUfBYxCMjCEnBCfC@lFExBEfAAVA\KxAA@WpC_@pCk@|Ce@jBq@rB_A|BQ\Wh@MXEHmApBm@x@oAhBwC|DoBxCqAdCgBbE_AlCiAvDi@xBi@lC]nBwB`NaA`Gq@fEaC|N]jBUfA]~AyA~Fm@fBqBjFu@bBaAlBmAtB_C|Ci@r@iAlA_B|A_Av@iAz@_SdNiA|@g@b@aBbBq@x@k@x@e@r@MTYl@u@~AOb@MXIVA@GTIRm@tBOn@Kb@SjAk@`EAL]fEI~@k@rGSjDOdC]bFMfBMfBa@xFUdDQhCC`@Cb@AJEj@mAxPu@dLK~Am@jI_Cp]i@bIwFpy@WfE[vE_Cp]SxCiFjw@e@jHOrBaAfOs@pKiAhQ]xESjDKhAe@~GKhAEh@Eb@yAbVQtBEh@?@IjA</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.1923761</lat>
+                        <lng>24.6712203</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>11.4 km</text>
+                        <value>11384</value>
+                     </distance>
+                     <duration>
+                        <text>12 mins</text>
+                        <value>708</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.6904393</lat>
+                        <lng>23.3377142</lng>
+                     </end_location>
+                     <html_instructions>Keep &lt;b>left&lt;/b> to continue on &lt;b>бул. „Цариградско шосе“&lt;/b></html_instructions>
+                     <maneuver>keep-left</maneuver>
+                     <polyline>
+                        <points>kyecGmrbnCcBdVGx@qB~ZgBtWiBlW}@tMe@vGEh@qBf^Y`FQfDSrDATC\]xFC`@WfFQnBEb@AHOxAOhA?BOl@y@lCIVc@xAM\eA|C_AfCGT[`AcBxEeBzEaDrJqErMg@xAkBtFe@tAa@`AgCfH]`AGJiA`CcAbBUZgBdCwEpF{BjCgPrRkGlH}TzWyC`EGLq@~@yCfEeAfBk@bAU\U^SVcGrJoChE{EtH_CpDiFlIk@r@cA`BcBnCCB_F~HW^sGfKkBtCIN_BfCaAzAgEtGEFCBCDCBABgBnCcBjCuAxBuAvBaBjCgAdBEFEDm@`Am@z@sFzIkUl^sKtPKPKNA@MRCDeDhFgEpGwHzLU\SXYd@eEnGILOVMRaDbFoApBg]pj@}C`F</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.63334220000001</lat>
+                        <lng>23.4475946</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>1.1 km</text>
+                        <value>1053</value>
+                     </distance>
+                     <duration>
+                        <text>3 mins</text>
+                        <value>208</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.6959198</lat>
+                        <lng>23.3274028</lng>
+                     </end_location>
+                     <html_instructions>Continue onto &lt;b>бул. „Цар Освободител“&lt;/b></html_instructions>
+                     <polyline>
+                        <points>g~pcGucmmC_ArAiAlB_HzIi@p@cAtA]|@aBlFu@bCITM\eBtFENEPi@jBc@|AKXe@tAYfAmArEGT</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.6904393</lat>
+                        <lng>23.3377142</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.2 km</text>
+                        <value>214</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>33</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.6968297</lat>
+                        <lng>23.325102</lng>
+                     </end_location>
+                     <html_instructions>Continue onto &lt;b>пл. „Княз Александър I“&lt;/b></html_instructions>
+                     <polyline>
+                        <points>o`rcGgckmCyAdFKZCJIXIXGNo@xB</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.6959198</lat>
+                        <lng>23.3274028</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>68 m</text>
+                        <value>68</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>13</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.6971419</lat>
+                        <lng>23.3243824</lng>
+                     </end_location>
+                     <html_instructions>Continue onto &lt;b>пл. „Атанас Буров“&lt;/b></html_instructions>
+                     <polyline>
+                        <points>efrcG{tjmC}@nC</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.6968297</lat>
+                        <lng>23.325102</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+                  <e>
+                     <distance>
+                        <text>0.2 km</text>
+                        <value>232</value>
+                     </distance>
+                     <duration>
+                        <text>1 min</text>
+                        <value>84</value>
+                     </duration>
+                     <end_location>
+                        <lat>42.6977148</lat>
+                        <lng>23.3218696</lng>
+                     </end_location>
+                     <html_instructions>Continue onto &lt;b>пл. „Независимост“&lt;/b></html_instructions>
+                     <polyline>
+                        <points>chrcGkpjmCMVGRy@v@DVDPBTDb@SpBQrBIl@CDCH?H</points>
+                     </polyline>
+                     <start_location>
+                        <lat>42.6971419</lat>
+                        <lng>23.3243824</lng>
+                     </start_location>
+                     <travel_mode>DRIVING</travel_mode>
+                  </e>
+               </steps>
+               <traffic_speed_entry/>
+               <via_waypoint/>
+            </e>
+         </legs>
+         <overview_polyline>
+            <points>{fwfG_bkiDl`@zJdWhNbOlsAjh@nNpy@fjBjMntCji@pn@xc@uJbg@xSfa@xjAprCb|Aru@zr@lj@cb@xk@moA~m@ka@zqBgpB~uAs^fvAcVrv@`B`yAt`Bzt@x^`Pht@tvAn~B`uB|yAtTtg@jt@^~Z~a@`{@`PvYpiA`q@af@buAsgA`hA~Ez_@rIpYqEbh@|`ArPn|AnT~wAdIzgB{Npu@~g@jT`bAmp@js@el@rv@pEbd@wXra@~l@fFnn@sI|VvOiHqCnf@nTnJkAhs@aCjz@rGuPdIjsBtQ`pAr|@jv@bZnOrd@l{@|g@|iA|Hv^zJcIqDzOkI`_@|HdV~t@|IhPbRt^mPxNng@fVdQvAeLvi@`g@joCcH`jBc`ChbAjP~i@`Yra@{q@|b@kc@loAbuAqHbl@l`@d`A|YpXhz@jhAvfAm[z}AtAje@hnAh~BduA`}AlpAzyAxz@xnC`rCpmDn|Bf^ZlOv~AhpB|f@bDnf@zUfaAq}B|nBcsGjtFs~@liIsNvrHbIj|Bpx@fjEdk@~iDL`pBst@|`D|EnaBnr@hjCiVhiReCxyIft@lnIzo@jmFbeA`rDdM|zD`rA|eGhFrwDqt@jcFaOhgLmC`|HxJzgJpD|vDzvAriDbF|xAm_@vqCrlAfyG~xApyCxu@b`DtlAdjLfs@nfF|_@pjMhm@ddE|KjzDpq@nlFn_AvqBrbApdCv^tcFxtBxmH`bDhqIns@b`DzbAtqHzmBntLx|@xdDf[doFb~@|lGv_ArzHjj@|uHb`B|sGxb@foCfd@vt@~dAdpA`eBntBj`AfzBbb@bsCfmEf~MfgAnqE|f@fyG?tyMs}@lkIqkA~yGyJruEzX~vJyMlhJ}B`wGjZ`tGhHvzGmS`qGdeA__@rxBgW~bBw\n]sRF}GxVsGx^aGjXwAbo@uFfe@lGt@`o@yAvAcO|Sqh@pl@s{@v@cn@zQk^hg@ww@lqAyjAfgE}bAtfD`Gx`DqVfdFmP`mN{h@ljMwc@t~CoeAn_DimBh~Do}AfeFmgEbwNizAhdHs|@luHiaBbaIsu@d`Gk@ryExl@tpBly@npB}NrmAeeAliBinA`fCubBbnEem@veAu~@tQalBxq@gr@ve@guDjjA{cBroAor@xz@wf@fdBmc@zsAmo@dl@c_AtzAmxBneC_kBzlB}cA~}B_fA|bDck@xnCam@xa@k_Avk@yTndAaq@`yBoJxaBcZx`Fun@xgBoq@~fCocAp{A{j@d`I_e@rgHoo@pzBsjFzxHs~AriD</points>
+         </overview_polyline>
+         <summary>Автомагистрала „Тракия“/A1</summary>
+         <warnings/>
+         <waypoint_order>
+            <e>0</e>
+         </waypoint_order>
+      </e>
+   </routes>
+   <status>OK</status>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="origin" value="Varna,Bulgaria"/>
+  <con:entry key="destination" value="Sofia,Bulgaria"/>
+  <con:entry key="waypoints" value="Plovdiv,Bulgaria"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="e12d249c-0fcf-4a64-b7d6-0a23edfd5757"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>Sofia</con:name><con:sourceType>destination</con:sourceType><con:sourceStep>Json - Request 2</con:sourceStep><con:sourcePath/><con:targetType>origin</con:targetType><con:targetStep>Json - Request 3</con:targetStep><con:targetPath/><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="Json - Request 3" id="03e18c3c-931a-4f67-82a2-18f2e24e1ea7"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/directions/json" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Json - Request 3" id="03a32b95-af13-42c5-803a-f5a2560be239" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:assertion type="Response SLA Assertion" id="12950248-9fae-497c-8650-a1974ea529f3" name="Response SLA"><con:configuration><SLA>800</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="72879dcd-291a-45be-b8d9-f58a6c274569" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="origin" value="Sofia,Bulgaria"/>
+  <con:entry key="destination" value="Kyustendil,Bulgaria"/>
+  <con:entry key="waypoints" value="Radomir,Bulgaria"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Json - Request 4" id="b80e1845-3df6-4bab-83a5-d811b018a6a3"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/directions/json" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Json - Request 4" id="d70ab0c3-974f-483b-b772-dadf49201d38" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:assertion type="JsonPath Match" id="61f87ec8-719d-49a3-9411-69a02ee6b21a" name="Match content of [end_address]"><con:configuration><path>$['routes'][0]['legs'][0]['end_address']</path><content>Perth WA, Australia</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="c00d8177-b046-41d6-90ec-d4fb0b285e03" name="Match content of [status]"><con:configuration><path>$['status']</path><content>OK</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="1f9ce899-dc32-4dfe-887c-34d91bb52e0a" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="origin" value="sydney,au"/>
+  <con:entry key="destination" value="perth,au"/>
+  <con:entry key="waypoints" value="via:-37.81223,144.96254|via:-34.92788,138.60008"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Json - Request 5" id="7467e22a-ff21-4415-a864-f3bf08136009"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/directions/json" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Json - Request 5" id="d5ad0d67-a3cd-4a3b-9927-2356b77f45f6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/directions/json</con:originalUri><con:assertion type="Response SLA Assertion" id="56b7d44b-a37b-493c-bae6-f9696aa7aa49" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="8e33b7eb-570e-4b36-9060-0613b64caacb" name="Match content of [status]"><con:configuration><path>$['status']</path><content>OK</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="origin" value="75 9th Ave New York, NY"/>
+  <con:entry key="destination" value="MetLife Stadium 1 MetLife Stadium Dr East Rutherford, NJ 07073"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>e12d249c-0fcf-4a64-b7d6-0a23edfd5757</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="0b3b787a-55f0-43b6-8d02-64b27c9658f6" name="Google Geolocating API"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="d1df1a85-70ab-4e18-a396-89da8f5caca3" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Google Building, LA, CA" id="0b631cfc-6e31-4d5d-b6c4-4c2eefe1564c"><con:settings/><con:config service="REST Service 1" resourcePath="/maps/api/geocode/json" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Google Building, LA, CA" id="a789e1c8-1af4-444a-86eb-204e464f3518" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="Response SLA Assertion" id="2f39adcc-0ca3-447e-ae34-139d532d10ce" name="Response SLA"><con:configuration><SLA>400</SLA></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="f1a5ae0e-4cac-487a-9462-bd382257cb5f" name="Match content of [status]"><con:configuration><path>$['status']</path><content>OK</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Sofia" id="ff690e71-792c-438b-bbcb-e091fc5ec562"><con:settings/><con:config service="REST Service 1" resourcePath="/maps/api/geocode/json" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Sofia" id="a789e1c8-1af4-444a-86eb-204e464f3518" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="Response SLA Assertion" id="2f39adcc-0ca3-447e-ae34-139d532d10ce" name="Response SLA"><con:configuration><SLA>800</SLA></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="d42eb2fc-65a2-4ddc-b6ca-6aa8854e2a75" name="Match content of [status]"><con:configuration><path>$['status']</path><content>OK</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="658c6dc5-6b95-4a19-b16f-0c34b8de52a4" name="Match content of [short_name]"><con:configuration><path>$['results'][0]['address_components'][1]['short_name']</path><content>ul. "Rodopski Izvor"</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="address" value="1000 Sofia, 53 Rodopski izvor str," xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Varna Coordinates" id="51dae412-3f14-4e5d-82dd-c2c524e1fbfb"><con:settings/><con:config service="REST Service 2" resourcePath="/maps/api/geocode/json" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Varna Coordinates" id="24eb1204-dae8-4f69-97d0-e1c3e6bbb508" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="Response SLA Assertion" id="eff9d6f0-21fa-4ff8-8e1b-6b0e60c2681d" name="Response SLA"><con:configuration><SLA>400</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" id="6fd8c2c6-57ca-4f06-a373-1ccab8bfef24" name="Contains"><con:configuration><token>Varna</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="8b672b3c-45f9-47ed-8f65-9c703d581473" name="Match content of [formatted_address]"><con:configuration><path>$['results'][5]['formatted_address']</path><content>9000 Varna, Bulgaria</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="8024d19b-c586-4dc8-b5e4-be22fe99e35e" name="Match content of [status]"><con:configuration><path>$['status']</path><content>OK</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="latlng" value="43.205305, 27.910052" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Hisarlaka Coordinates" id="76c027b8-d69e-43da-a9d5-4c4432d38579"><con:settings/><con:config service="REST Service 2" resourcePath="/maps/api/geocode/json" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Hisarlaka Coordinates" id="24eb1204-dae8-4f69-97d0-e1c3e6bbb508" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="Response SLA Assertion" id="eff9d6f0-21fa-4ff8-8e1b-6b0e60c2681d" name="Response SLA"><con:configuration><SLA>400</SLA></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="ad7571d7-1098-4189-bf41-54070a94cd80" name="Match content of [formatted_address]"><con:configuration><path>$['results'][0]['formatted_address']</path><content>Късноантична и средновековна крепост Пауталия / Велбъжд, 2500, Bulgaria</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="4713afe5-3f39-4fd0-a060-16dad22cea78" name="Match content of [status]"><con:configuration><path>$['status']</path><content>OK</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="latlng" value="42.275765, 22.691353" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>51dae412-3f14-4e5d-82dd-c2c524e1fbfb</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:authRepository/><con:tags/></con:soapui-project>
